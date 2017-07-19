@@ -10,11 +10,10 @@
 ##### Column 6: Brake
 
 #### I used the data provided by Udacity for a few tracks, and recorded some additional data on my own using the simulator as well. The following files are relevant for this project: 
-##### --Clone.py (script used to create and train the model)
+##### --BehaviorClone.ipynb(Jupyter notebook with all comments)
 ##### --drive.py (script to drive the car)
 ##### --model.h5 (a trained Keras model)
 ##### --README.md (a markdown report writeup file)
-##### --BehaviorClone.ipynb(Jupyter notebook with all comments. Same as Clone.py, but with comments for the report)
 ##### --[Video](https://youtu.be/ap68tlotoPk)
 
 #### The following directories are relevant for this project:
