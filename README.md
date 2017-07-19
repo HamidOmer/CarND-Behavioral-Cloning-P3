@@ -238,7 +238,7 @@ plot_row_col(4,4,images,steerings)
 ![png](Misc4Report/output_10_0.png)
 
 
-#### Random brightness is added the images in the "process_image" function so that the CNN model can be trained to drive in different lighting conditions on the track. 
+#### Random brightness is added to the images in the "process_image" function so that the CNN model can be trained to drive in different lighting conditions on the track. 
 
 
 ```python
