@@ -14,12 +14,10 @@
 ##### --drive.py (script to drive the car)
 ##### --model.h5 (a trained Keras model)
 ##### --README.md (a markdown report writeup file)
-##### --video.mp4 (a video recording of the vehicle driving autonomously around the track for at least one full lap)
 ##### --BehaviorClone.ipynb(Jupyter notebook with all comments. Same as Clone.py, but with comments for the report)
+##### --My_Data.zip (zip file of training data that I recorded from Udacity's simulator)
 
 #### The following directories are relevant for this project:
-#### ./My_Data - Contains the CSV file and images directory for training data created by me on track1
-#### ./Udacity_Data - Contains the CSV file and images directory for training data supplied by Udacity on track1
 #### ./Misc4Report - Images and other files that are used in the report
 
 #### To train the model, run the following command: python Clone.py
@@ -138,7 +136,7 @@ plt.show()
     
 
 
-![png](output_5_1.png)
+![png](Misc4Report/output_5_1.png)
 
 
 
@@ -238,7 +236,7 @@ plot_row_col(4,4,images,steerings)
 ```
 
 
-![png](output_10_0.png)
+![png](Misc4Report/output_10_0.png)
 
 
 #### Random brightness is added the images in the "process_image" function so that the CNN model can be trained to drive in different lighting conditions on the track. 
@@ -267,7 +265,7 @@ plt.show()
 ```
 
 
-![png](output_12_0.png)
+![png](Misc4Report/output_12_0.png)
 
 
 #### Random transformations are added to the images so that the CNN model can be trained to drive the car while it is at different positions on the track. The input image is randomly shifted horizontally and vertically by a few pixels. The steering angle is also shifted accordingly to adjust for the shifts. This augmentation feature is coded into the process_image function.
@@ -296,7 +294,7 @@ plt.show()
 ```
 
 
-![png](output_14_0.png)
+![png](Misc4Report/output_14_0.png)
 
 
 #### There are a number of shadows on the track because of trees. I applied random shadows to a third of the input images such that the CNN model is trained to account for shadows on the track. The car also drives left most of the time on track 1 and this would skew the CNN model by training a bias into it to drive left. To account for this bias, the input images are flipped horizontally 50% of the time along with the steering angle. Both of these data augmentation features are coded into the "process_image" function.
@@ -325,7 +323,7 @@ plt.show()
 ```
 
 
-![png](output_16_0.png)
+![png](Misc4Report/output_16_0.png)
 
 
 #### A histogram showing the distribution of steering angle data is plotted to explore how the data looks like, and to determine what the next steps should be to process the data.
@@ -345,7 +343,7 @@ plt.show()
 ```
 
 
-![png](output_18_0.png)
+![png](Misc4Report/output_18_0.png)
 
 
 ## Step 3: Process the data to feed to the CNN model
@@ -379,7 +377,7 @@ plt.show()
 ```
 
 
-![png](output_21_0.png)
+![png](Misc4Report/output_21_0.png)
 
 
 ### Split the dataset into training and validation datasets (85/15 split)
@@ -412,9 +410,9 @@ print ("# of Validation steering angles:", len(yv_angles))
     
 
 ## Step 4: Select the CNN model along with the hyperparameters
-### I used an adaptation of [Nvidia's CNN model's]  (https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf) to network architecture to accomplish the objective of this project. The detailed architecture of this network is shown in the figure below along with the activations and L2 regularizations on each layer:
+### I used an adaptation of [Nvidia's CNN model's](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf) to network architecture to accomplish the objective of this project. The detailed architecture of this network is shown in the figure below along with the activations and L2 regularizations on each layer:
 
-![CNNModel.png](attachment:CNNModel.png)
+![CNNModel.png](Misc4Report/CNNModel.png)
 
 
 ```python
