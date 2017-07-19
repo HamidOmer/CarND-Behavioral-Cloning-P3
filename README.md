@@ -15,7 +15,7 @@
 ##### --model.h5 (a trained Keras model)
 ##### --README.md (a markdown report writeup file)
 ##### --BehaviorClone.ipynb(Jupyter notebook with all comments. Same as Clone.py, but with comments for the report)
-##### --My_Data.zip (zip file of training data that I recorded from Udacity's simulator)
+##### --[Video](https://youtu.be/ap68tlotoPk)
 
 #### The following directories are relevant for this project:
 #### ./Misc4Report - Images and other files that are used in the report
@@ -579,6 +579,6 @@ model.save('./model.h5')
     
 
 ## Summary:
-### The car drives fine on track 1 as evident in the video.mp4 file. However, for track 2 the results are inconsistent. Even if I run the same model multiple times, I get different results on track 2. This must be because of the model weights initialization being different for every run, resulting in different convergences for a varying final result. I would like to revisit this project at some point in the future to ensure that the model weights initialization are consistent. In some cases, I have seen the car drive halfway on track 2 and crash at a sharp turn. In other cases, I have seen that the car crashes at the beginning of the track. 
+### The car drives fine on track 1 as evident in the [video](https://youtu.be/ap68tlotoPk) file. However, for track 2 the results are inconsistent. Even if I run the same model multiple times, I get different results on track 2. This must be because of the model weights initialization being different for every run, resulting in different convergences for a varying final result. I would like to revisit this project at some point in the future to ensure that the model weights initialization are consistent. In some cases, I have seen the car drive halfway on track 2 and crash at a sharp turn. In other cases, I have seen that the car crashes at the beginning of the track. 
 
 ### I would also like to add more data for sharp turns so that the model can be trained better for these situations. Also, track 2 has a divider lane and I would like to generate data with divider lanes so that the car can stay within the lane in track2 as well. With additional model tuning using relevant data and further experimentation with the hyperparameters, this model can be generalized to work with other tracks as well.
